@@ -1,0 +1,25 @@
+{
+  "name": "powderboot",
+  "version": "1.0.0",
+  "description": "View all webcams from colorado resorts",
+  "main": "index.js",
+  "author": "Josh Mattila",
+  "license": "ISC",
+  "devDependencies": {
+    "angular2": "^2.0.0-beta.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "gulp": "^3.9.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "^0.19.17",
+    "zone.js": "^0.5.10"
+  },
+  "dependencies": {
+    "typescript": "^1.7.3",
+    "del": "^2.2.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-server-livereload": "^1.6.2",
+    "gulp-typescript": "^2.10.0"
+  }
+}
