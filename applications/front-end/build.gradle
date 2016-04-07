@@ -1,13 +1,13 @@
-//import com.moowork.gradle.gulp.task.GulpTask
+import com.moowork.gradle.gulp.GulpTask
 
 plugins {
+    id "com.moowork.node" version "0.11"
     id "com.moowork.gulp" version "0.11"
 }
 
 configurations {
     compile
 }
-
 
 node {
     // Version of node to use.
@@ -27,14 +27,19 @@ node {
     nodeModulesDir = file("${project.projectDir}")
 }
 
+buildDir = "build"
+
 task clean(type: Delete) {
     delete "build"
 }
 
-task build(dependsOn: "installGulp", type: GulpTask) {
+task build(type: GulpTask) {
     args = ['build']
 }
 
-task run(dependsOn: "installGulp", type: GulpTask) {
+task run(type: GulpTask) {
     args = ['serve']
 }
+
+build.dependsOn(["npmInstall"])
+run.dependsOn(["npmInstall"])

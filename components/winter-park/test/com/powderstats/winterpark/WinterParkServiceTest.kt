@@ -30,9 +30,6 @@ class WinterParkServiceTest {
 
     @Test
     fun testGetLatestImage() {
-        var inputFile = FileInputStream("test/resources/firefox.png");
-        var bytes = IOUtils.toByteArray(inputFile);
-
         Mockito.`when`(imageFetcherService.fetchImage(anyObject())).thenReturn(FileInputStream("test/resources/firefox.png"));
         Mockito.`when`(imageFetcherService.encodeStreamAsBase64(anyObject())).thenReturn("encoded-base-64-string");
 

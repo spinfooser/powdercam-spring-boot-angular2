@@ -26,14 +26,13 @@ class ImageFetcherServiceTest {
 
     @Test
     fun testGetLatestImage() {
-        var urlToFetch = URL("https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2_1x.png")
+        var urlToFetch = URL("http://www.schaik.com/pngsuite/basn6a16.png")
         var service = ImageFetcherService();
 
         var actualInputStream = service.fetchImage(urlToFetch);
         var byteOutputStream = ByteArrayOutputStream()
         IOUtils.copy(actualInputStream, byteOutputStream)
 
-//        assertThat(byteOutputStream.size(), equalTo(15829));
         assertThat(byteOutputStream.toString().subSequence(0, 4).toString(), equalTo("�PNG"))
     }
 

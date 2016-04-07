@@ -24,10 +24,4 @@ export class WinterParkComponent {
                 this.image = "data:image/png;base64," + powder.image
         );
     }
-
-
-    //
-    //ngOnInit() {
-    //    this.heroes = this.getHeroes();
-    //}
 }

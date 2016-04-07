@@ -17,7 +17,7 @@ var vendorPaths = [
 ];
 
 
-gulp.task('clean', ['cleanDist', 'cleanPub'], function () {
+gulp.task('clean', ['cleanDist'], function () {
 });
 
 // clean the contents of the distribution directory

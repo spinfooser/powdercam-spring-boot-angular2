@@ -1,9 +1,8 @@
-apply from: "${getRootDir()}/java.gradle"
 
 buildscript {
 
     ext {
-        kotlin_version = '1.0.0-beta-4589'
+        kotlin_version = '1.0.1-2'
     }
 
     repositories {
@@ -17,6 +16,7 @@ buildscript {
     }
 }
 
+apply from: "${getRootDir()}/java.gradle"
 apply plugin: 'kotlin' // New
 
 dependencies {

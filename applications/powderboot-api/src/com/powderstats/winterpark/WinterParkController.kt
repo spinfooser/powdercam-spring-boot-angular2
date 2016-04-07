@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod.GET
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-public open class WinterParkController() {
+open class WinterParkController() {
 
     @Autowired
     constructor(winterPark: WinterParkService) : this() {
@@ -20,7 +20,7 @@ public open class WinterParkController() {
     private lateinit var winterParkService: WinterParkService;
 
     @RequestMapping(value = "/api/winter-park", method = arrayOf(GET))
-    public fun getImage(): ResponseEntity<PowderImage> {
+    fun getImage(): ResponseEntity<PowderImage> {
         return ResponseEntity(winterParkService.getLatestImage(), HttpStatus.OK);
     }
 }

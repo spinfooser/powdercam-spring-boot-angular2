@@ -3,4 +3,6 @@ dist/
 public/
 node_modules/
 .gradle/
+.idea/
 *.iml
+snapshots/
