@@ -5,11 +5,16 @@ import {WinterParkComponent} from './winter-park/winterpark.component';
 @Component({
     selector: 'my-app',
     template: `
-    <h1>{{title}}</h1>
-    <nav>
-      <a [routerLink]="['WinterPark']">Winter Park Camera</a>
-    </nav>
-    <router-outlet></router-outlet>
+    <header>{{title}}</header>
+    <main>
+        <div class="divider-line"></div>
+        <nav class="site-nav">
+            <a [routerLink]="['WinterPark']">Winter Park Camera</a>
+        </nav>
+        <div class="cards">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
   `,
     //styleUrls: ['app/app.component.css'],
     directives: [ROUTER_DIRECTIVES],

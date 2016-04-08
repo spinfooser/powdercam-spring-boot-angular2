@@ -1,1 +1,5 @@
-<img src={{image}}>
+<div [ngClass]="{'hidden': !image}" class="powdercam">
+    <img src={{image}}>
+    <h2>Winter Park</h2>
+</div>
+<div *ngIf="!image" class="loading"></div>

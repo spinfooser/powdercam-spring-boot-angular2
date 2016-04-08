@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans'),
+         url('/fonts/NotoSans-Regular.eot') format('eot'),
+         url('/fonts/NotoSans-Regular.ttf') format('ttf'),
+         url('/fonts/NotoSans-Regular.woff') format('woff'),
+         url('/fonts/NotoSans-Regular.otf') format('otf');
+    unicode-range: U+000-5FF;
+}
