@@ -8,7 +8,6 @@ import 'rxjs/add/operator/map';
     selector: 'winter-park',
     templateUrl: './app/winter-park/winterpark.component.html',
     viewProviders: [HTTP_PROVIDERS]
-    //styleUrls: ['app/winterpark.component.css']
 })
 export class WinterParkComponent {
     public image:String;
@@ -22,6 +21,6 @@ export class WinterParkComponent {
             // component
             .subscribe(powder =>
                 this.image = "data:image/png;base64," + powder.image
-        );
+            );
     }
 }

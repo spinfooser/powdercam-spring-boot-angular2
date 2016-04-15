@@ -1,16 +1,24 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "system",
+    "module": "commonjs",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+    "typings/main.d.ts",
+    "typings/main",
+    "typings/browser"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "resolveGlobs": false,
+    "forkChecker": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
 }
